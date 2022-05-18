@@ -1,3 +1,51 @@
-@import 'reset';
+@import 'fonts';
+@import 'vars';
+@import 'global';
+
+.header__top-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+.header__text{
+  margin-left: auto;
+  margin-right: 50px;
+}
+.header__help-link{
+  color: $red;
+}
+.header__btn{
+  color: #fff;
+  width: 72px;
+  padding: 4px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  &--login{
+    background-color: $green;
+  }
+  &--register{
+    background-color: $red;
+    margin-left: 5px;
+  }
+}
+.header__menu{
+  background-color: $dark;
+}
+.menu{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  &__item + &__item{
+    margin-left: 41px;
+  }
+  &__link{
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+}
 
 @import 'media';

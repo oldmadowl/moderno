@@ -21,13 +21,13 @@ function scripts(){
     .pipe(browserSync.stream())
 };
 
-function pluginscripts(){
-  src([
-  ])
-    .pipe(concat('libs.min.js'))
-    .pipe(uglify())
-    .pipe(dest('app/js'))
-}
+// function pluginscripts(){
+//   src([
+//   ])
+//     .pipe(concat('libs.min.js'))
+//     .pipe(uglify())
+//     .pipe(dest('app/js'))
+// }
 
 function pluginstyles(){
   return src([
@@ -104,7 +104,7 @@ exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.pluginstyles = pluginstyles;
-exports.pluginscripts = pluginscripts;
+// exports.pluginscripts = pluginscripts;
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles, pluginstyles, scripts, pluginscripts, browsersync, watching);
+exports.default = parallel(styles, pluginstyles, scripts, browsersync, watching);
