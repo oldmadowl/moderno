@@ -12,9 +12,7 @@ const csso         = require('gulp-csso');
 
 
 function scripts(){
-  src([
-    'app/js/main.js'
-  ])
+  return src('app/js/main.js')
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js'))
@@ -24,6 +22,8 @@ function scripts(){
 function pluginscripts(){
   src([
     'node_modules/mixitup/dist/mixitup.js',
+    'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/rateyo/jquery.rateyo.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -33,6 +33,8 @@ function pluginscripts(){
 function pluginstyles(){
   return src([
     'node_modules/normalize.css/normalize.css',
+    'node_modules/slick-carousel/slick/slick.css',
+    'node_modules/rateyo/jquery.rateyo.css'
   ])
   .pipe(concat('libs.min.css'))
   .pipe(csso())

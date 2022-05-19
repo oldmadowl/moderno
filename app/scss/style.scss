@@ -161,4 +161,41 @@
 }
 //end products
 
+//start trends 
+
+.trends{
+  padding: 115px 0 120px;
+  &__title{
+    @extend %title;
+    margin-bottom: 50px;
+  }
+  .item{
+    padding: 0;
+    padding-bottom: 67px;
+  }
+  .slick-dots{
+    text-align: center;
+    line-height: 0;
+    li{
+      margin: 0 4px;
+      &.slick-active{
+        button{
+          background-color: $green;
+          border-color: transparent;
+        }
+      }
+    }
+    button{
+      font-size: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #e8e8e8;
+      border-top: 1px solid #b1b1b1;
+      transition: all .3s;
+    }
+  }
+}
+//end trends
+
 @import 'media';
