@@ -298,4 +298,44 @@
 }
 //end author
 
+//start tutorial
+
+.tutorial{
+  padding: 60px 0 120px;
+  &__title{
+    @extend %title;
+    margin-bottom: 50px;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    max-width: 370px;
+    width: 100%;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding-bottom: 35px;
+  }
+  &__img-link{
+    display: block;
+    height: 270px;
+    margin-bottom: 35px;
+  }
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__item-title{
+    font-size: 24px;
+    line-height: normal;
+    color: $dark;
+    font-weight: 700;
+    padding: 0 15px;
+  }
+}
+//end tutorial
+
 @import 'media';
