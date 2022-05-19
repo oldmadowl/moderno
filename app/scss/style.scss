@@ -256,4 +256,46 @@
 }
 //end advanteges
 
+//start author
+
+.author{
+  background-image: url(../images/backgrounds/author-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding: 50px 0;
+  text-transform: capitalize;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__inner{
+    background-color: $green;
+    max-width: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 215px;
+    padding: 20px 60px;
+  }
+  &__text{
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 260px;
+    margin-right: 20px;
+    span{
+      font-weight: 700;
+    }
+  }
+  &__link{
+    color: $dark;
+    font-size: 18px;
+    padding: 20px 40px 18px;
+    background-color: #fff;
+  }
+}
+//end author
+
 @import 'media';
