@@ -198,4 +198,62 @@
 }
 //end trends
 
+//start advanteges
+
+.advantages{
+  padding: 110px 0;
+  background-color: $dark;
+  color: #fff;
+  &__title{
+    @extend %title;
+    margin-bottom: 70px;
+    color: #fff;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    max-width: 325px;
+    text-align: center;
+    &-img{
+      width: 113px;
+      height: 113px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin: 0 auto 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all .3s;
+      svg{
+        fill: #000;
+        transition: all .3s;
+      }
+    }
+    &-title{
+      font-size: 24px;
+      margin-bottom: 15px;
+      line-height: normal;
+      font-weight: 500;
+      transition: all .3s;
+    }
+    &-text{
+      color: #b0bec5;
+    }
+  }
+}
+.advantages__item:hover{
+  .advantages__item-img{
+    background-color: $green;
+    svg{
+      fill: #fff;
+    }
+  }
+  .advantages__item-title{
+    color: $green;
+  }
+}
+//end advanteges
+
 @import 'media';
