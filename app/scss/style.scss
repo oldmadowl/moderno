@@ -2,6 +2,10 @@
 @import 'vars';
 @import 'global';
 
+
+
+// start header
+
 .header__top-inner{
   display: flex;
   justify-content: space-between;
@@ -47,6 +51,9 @@
     font-weight: 500;
   }
 }
+//end header
+
+//start search
 .search{
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,12 +100,65 @@
     }
     &-btn{
       position: absolute;
-      right: 18px;
+      right: 20px;
       top: 50%;
       transform: translateY(-50%);
     }
   }
 }
+//end search
+
+//start products
+
+.products{
+  background-color: $gray;
+  padding: 110px 0;
+  &__title{
+    @extend %title;
+    margin-bottom: 40px;
+  }
+  &__buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  &__btn{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: $dark;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .3s;
+    & + &{
+      margin-left: 6px;
+    }
+  }
+  &__box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  &__sort-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+  }
+  &__sort-btn{
+    background-color: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+    padding: 17px 30px;
+    color: $dark;
+    font-size: 16px;
+    margin: 0 5px;
+    transition: all .3s;
+  }
+  .mixitup-control-active{
+    box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
+    background-color: $red;
+    color: #fff;
+  }
+}
+//end products
 
 @import 'media';
-

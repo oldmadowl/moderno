@@ -17,21 +17,16 @@ ul, ol{
 li{
   display: inline-block;
 }
-button{
+button, input{
   border: none;
   background-color: transparent;
+}
+button{
   cursor: pointer;
+  padding: 0;
 }
 h1, h2, h3, h4, h5, h6, p{
   margin: 0;
-}
-input{
-  border: none;
-}
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 body{
   font-family: 'Roboto', sans-serif;
@@ -40,3 +35,95 @@ body{
   font-size: 15px;
   line-height: 24px;
 }
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-fluid{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+%title{
+  font-size: 36px;
+  line-height: 60px;
+  color: $dark;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: center;
+}
+.item{
+  padding: 15px;
+  &__inner{
+    max-width: 442px;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    background-color: #fff;
+    transition: all .3s;
+    &:hover{
+      box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+    }
+  }
+  &__img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__info-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+    padding: 10px 30px;
+    & + &{
+      border-top: 1px solid #e7ecf2;
+      min-height: 70px;
+    }
+  }
+  &__info-text{
+    max-width: 310px;
+    font-weight: 500;
+  }
+  &__title{
+    font-size: 18px;
+    color: $dark;
+    display: block;
+  }
+  &__category{
+    color: $green;
+    font-size: 14px;
+  }
+  &__price{
+    font-weight: 700;
+    color: $dark;
+    font-size: 20px;
+  }
+  &__author{
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 43px;
+    position: relative;
+    margin-right: 15px;
+    span{
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &__star-rate{
+    font-size: 12px;
+    color: #b0bec5;
+    span{
+      color: $dark;
+    }
+  }
+}
+
