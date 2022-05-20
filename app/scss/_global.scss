@@ -35,6 +35,18 @@ body{
   font-size: 15px;
   line-height: 24px;
 }
+@mixin raleway($weight: 700){
+  font-family: 'Raleway', sans-serif;
+  font-weight: $weight;
+}
+%title{
+  font-size: 36px;
+  line-height: 60px;
+  color: $dark;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: center;
+}
 .container{
   max-width: 1200px;
   margin: 0 auto;
@@ -44,14 +56,6 @@ body{
   max-width: 100%;
   margin: 0 auto;
   padding: 0 30px;
-}
-%title{
-  font-size: 36px;
-  line-height: 60px;
-  color: $dark;
-  text-transform: capitalize;
-  font-weight: 700;
-  text-align: center;
 }
 .item{
   padding: 15px;
