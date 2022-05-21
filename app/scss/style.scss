@@ -346,7 +346,126 @@
 .notification-menu__link:hover::before{
   content: '\f0a2';
 }
+.compensate-for-scrollbar{
+  margin-right: 0 !important;
+}
 //end header
+
+
+//start modal
+.modal{
+  display: none;
+  background-color: $green;
+  color: #fff;
+  padding: 80px 50px 105px;
+  max-width: 730px;
+  width: 100%;
+  &__title{
+    font-size: 48px;
+    line-height: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__form{
+    max-width: 400px;
+    margin: 0 auto;
+    &-label{
+      position: relative;
+      display: block;
+      &::after{
+        position: absolute;
+        left: 18px;
+        top: 9px;
+        font-family: 'icomoon';
+        font-size: 14px;
+      }
+    }
+    &-input{
+      width: 100%;
+      height: 43px;
+      background-color: #76ae36;
+      padding-left: 40px;
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 8px;
+      &::placeholder{
+        color: #fff;
+      }
+    }
+  }
+  &__buttons-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  &__btn-submit{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 16px 15px;
+    width: 140px;
+    background-color: #fff;
+    box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 1);
+    &:active{
+      box-shadow: none;
+    }
+  }
+  &__btn-create{
+    font-size: 18px;
+    text-transform: capitalize;
+    position: relative;
+    padding: 12px 37px 12px 66px;
+    background-color: #76ae36;
+    &::before{
+      content: '\f044';
+      position: absolute;
+      font-family: 'icomoon';
+      font-size: 18px;
+      left: 36px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__link{
+    font-size: 18px;
+  }
+  .fancybox-close-small{
+    top: 6px;
+    right: 13px;
+    svg{
+      display: none;
+    }
+    &::before{
+      content: '\f00d';
+      font-family: 'icomoon';
+      font-size: 18px;
+      color: #fff;
+      // position: absolute;
+    }
+  }
+}
+.label-name::after{
+  content: '\f007';
+}
+.label-pass::after{
+  content: '\f023';
+}
+
+.Rectangle_59 {
+  background-color: rgb(255, 255, 255);
+  
+  position: absolute;
+  left: 760px;
+  top: 510px;
+  width: 139px;
+  height: 48px;
+  z-index: 53;
+}
+
+//end modal
 
 //start search
 .search{

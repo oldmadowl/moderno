@@ -23,7 +23,8 @@ function pluginscripts(){
   src([
     'node_modules/mixitup/dist/mixitup.js',
     'node_modules/slick-carousel/slick/slick.js',
-    'node_modules/rateyo/jquery.rateyo.js'
+    'node_modules/rateyo/jquery.rateyo.js',
+    'node_modules/@fancyapps/fancybox//dist/jquery.fancybox.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -34,7 +35,8 @@ function pluginstyles(){
   return src([
     'node_modules/normalize.css/normalize.css',
     'node_modules/slick-carousel/slick/slick.css',
-    'node_modules/rateyo/jquery.rateyo.css'
+    'node_modules/rateyo/jquery.rateyo.css',
+    'node_modules/@fancyapps/fancybox//dist/jquery.fancybox.css'
   ])
   .pipe(concat('libs.min.css'))
   .pipe(csso())
