@@ -11,10 +11,11 @@
   justify-content: space-between;
   align-items: center;
   height: 90px;
+  position: relative;
 }
 .header__text{
   margin-left: auto;
-  margin-right: 50px;
+  margin-right: 30px;
 }
 .header__help-link{
   color: $red;
@@ -26,29 +27,27 @@
   border-radius: 4px;
   text-align: center;
   font-size: 12px;
+  &.active{
+    display: block;
+  }
+  &.off{
+    display: none;
+  }
   &--login{
     background-color: $green;
-    &.off{
-      display: none;
-    }
   }
   &--register{
     background-color: $red;
     margin-left: 6px;
-    &.off{
-      display: none;
-    }
   }
   &--logout{
     display: none;
     background-color: $red;
-    &.active{
-      display: block;
-    }
   }
 }
 .header__menu{
   background-color: $dark;
+  position: relative;
 }
 .menu{
   height: 60px;
@@ -63,10 +62,43 @@
     line-height: 30px;
     font-weight: 500;
   }
+  &__btn{
+    display: none;
+    width: 35px;
+    cursor: pointer;
+    &-line{
+      height: 4px;
+      background-color: $dark;
+      & + &{
+        margin-top: 5px;
+      }
+    }
+  }
 }
 .header__box{
   display: flex;
   align-items: center;
+}
+.header-box-btn{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: $dark;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: none;
+  cursor: pointer;
+  &::before{
+    color: #fff;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
 }
 .header__circle{
   width: 34px;
@@ -76,12 +108,8 @@
   margin-right: 17px;
   position: relative;
   cursor: pointer;
-  display: none;
   &-wrapper{
     position: relative;
-  }
-  &.active{
-    display: block;
   }
   &::before{
     position: absolute;
@@ -125,6 +153,12 @@
   align-items: center;
   position: relative;
   height: 90px;
+  &.off{
+    display: none;
+  }
+  &.active{
+    display: flex;
+  }
   &:hover{
     .user__menu{
       transform: scale(1);
@@ -756,7 +790,6 @@
     }
   }
 }
+
 //end footer
-
 @import 'media';
-

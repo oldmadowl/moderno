@@ -1,5 +1,140 @@
+@media (max-width: 1100px){
+  .footer__inner {
+    flex-wrap: wrap;
+    padding: 60px 0;
+  }
+  .footer__col-about{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1000px){
+  .header__text {
+    display: none;
+  }
+}
+@media (max-width: 920px){
+  .menu__list {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 15px;
+    background-color: $dark;
+    z-index: 5;
+    border-bottom: 5px solid rgba(#fff, .5);
+  }
+  .menu__item{
+    display: block;
+    text-align: center;
+    & + &{
+      margin-left: 0;
+      border-top: 1px solid rgba(#fff, .5);
+    }
+  }
+  .menu__link{
+    color: #fff;
+    display: block;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  .header__menu{
+    height: 0;
+  }
+  .menu__btn{
+    display: block;
+    position: absolute;
+    top: -55px;
+  }
+  .header__logo{
+    margin-left: 55px;
+  }
+}
+
+@media (max-width: 800px){
+  .footer__inner{
+    justify-content: flex-start;
+  }
+  .footer__col-list{
+    margin-bottom: 30px;
+    &+& {
+      margin-left: 40px;
+    }
+  }
+  .footer__col-contacts{
+    width: 50%;
+  }
+  .footer__social-link{
+    margin: 0;
+  }
+  .footer__social-item{
+    &+& {
+      margin-left: 30px;
+    }
+  }
+}
+
 @media (max-width: 720px){
-  .container-fluid{
+  .container-fluid {
     padding: 0 15px;
+  }
+  .footer__col-contacts{
+    width: 100%;
+  }
+  .header__notifications,
+  .header__message{
+    display: none;
+  }
+  .header-box-btn{
+    display: block;
+  }
+  .header__top-inner{
+    background-color: #fff;
+  }
+  .header__box{
+    transition: all .5s;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    height: 90px;
+    z-index: 10;
+    padding-right: 20px;
+    transform: translateX(-200%);
+    &.active{
+      transform: translateX(0);
+    }
+  }
+  .circle-menu{
+    right: auto;
+    left: 0;
+  }
+}
+
+@media (max-width: 420px){
+  .user{
+    margin-right: 15px;
+  }
+  .user__info{
+    display: none;
+  }
+  .user__img{
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 500px){
+  .footer__col-list{
+    width: 100%;
+    &+&{
+      margin-left: 0;
+    }
+  }
+}
+
+
+@media (min-width: 921px){
+  .menu__lis{
+    display: block !important;
   }
 }
