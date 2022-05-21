@@ -17,11 +17,4 @@ $(function(){
     readOnly: true,
   });
 
-
-  $('.header__circle').on('click', function(){
-    $(this).toggleClass('open');
-    $(this).next('.circle-menu').slideToggle();
-  });
-
-
 });
