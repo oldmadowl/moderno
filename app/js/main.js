@@ -26,6 +26,18 @@ $(function(){
   });
 
 
+  $('.product__tabs-btn').on('click', function(e){
+    e.preventDefault();
+
+    $('.product__tabs-btn').removeClass('active');
+    $('.product__tabs-item').removeClass('active');
+
+    $(this).addClass('active');
+    $($(this).attr('href')).addClass('active');
+
+  });
+
+
   var mixer = mixitup('.products__box');
 
 });
