@@ -160,6 +160,7 @@ body{
     left: 0;
     font-family: 'icomoon';
     color: $green;
+    transition: all .3s;
   }
 }
 .circle-menu{
@@ -217,5 +218,33 @@ body{
   &__inner{
     border: 1px solid $border-color;
     background-color: #fff;
+  }
+}
+.tabs__btn{
+  font-weight: 500;
+  position: relative;
+  transition: all .5s;
+  &::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: transparent;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    transition: all .3s;
+  }
+  &.active{
+    color: $dark;
+    &::after{
+      background-color: $green;
+    }
+  }
+}
+.tabs__item{
+  display: none;
+  &.active{
+    display: block;
   }
 }
