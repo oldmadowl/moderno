@@ -266,129 +266,89 @@
           <a class="breadcrumbs__link" href="index.html">Home</a>
         </li>
         <li class="breadcrumbs__item">
-          <span>Settings</span>
+          <span>Upload Product</span>
         </li>
       </ul>
     </div>
   </div>
   <main class="main">
-    <div class="settings block">
+
+    <div class="upload block">
       <div class="container">
-        <div class="settings__wrapper">
-          <div class="settings__tab-controls">
-            <a class="settings__tab-btn tabs__btn list-link active" href="#tab-1">
-              Personal Information
-            </a>
-            <a class="settings__tab-btn tabs__btn list-link" href="#tab-2">
-              Profile
-            </a>
-            <a class="settings__tab-btn tabs__btn list-link" href="#tab-3">
-              Badges
-            </a>
-            <a class="settings__tab-btn tabs__btn list-link" href="#tab-4">
-              E-mail Settings
-            </a>
-            <a class="settings__tab-btn tabs__btn list-link" href="#tab-5">
-              Social Network
-            </a>
-          </div>
-          <div class="settings__tab-items">
-            <div class="settings__tab-item tabs__item active" id="tab-1">
-              <div class="settings__tab-inner block__inner">
-                <div class="settings__header block__header">
-                  Personal Information
-                </div>
-                <div class="settings__content">
-                  <form action="" class="settings__form">
-                    <label class="settings__form-label form-label">
-                      <span>First Name</span>
-                      <input class="settings__form-input form-input" type="text">
-                    </label>
-                    <label class="settings__form-label form-label">
-                      <span>Last Name</span>
-                      <input class="settings__form-input form-input" type="text">
-                    </label>
-                    <label class="settings__form-label form-label">
-                      <span>Company Name</span>
-                      <input class="settings__form-input form-input" type="text">
-                    </label>
-                    <label class="settings__form-label form-label">
-                      <span>Country</span>
-                      <select class="settings__form-select form-select">
-                        <option class="settings__form-option">Select Your Country</option>
-                        <option class="settings__form-option">Ukraine</option>
-                        <option class="settings__form-option">Poland</option>
-                      </select>
-                    </label>
-                    <label class="settings__form-label form-label">
-                      <span>Address Line 1</span>
-                      <input class="settings__form-input form-input" type="text">
-                    </label>
-                    <label class="settings__form-label form-label">
-                      <span>Address Line 2</span>
-                      <input class="settings__form-input form-input" type="text">
-                    </label>
-                    <label class="settings__form-label form-label">
-                      <span>City</span>
-                      <input class="settings__form-input form-input" type="text">
-                    </label>
-                    <label class="settings__form-label form-label">
-                      <span>State / Province / Region</span>
-                      <input class="settings__form-input form-input" type="text">
-                    </label>
-                    <label class="settings__form-label form-label">
-                      <span>Zip / Postal Code</span>
-                      <input class="settings__form-input form-input" type="text">
-                    </label>
-                    <button class="settings__form-btn form-btn" type="submit">Update</button>
-                  </form>
-                </div>
+        <div class="upload__inner block__inner">
+          <form class="upload__form">
+            <div class="upload__form-section">
+              <div class="upload__form-header block__header">
+                Upload Your item
+              </div>
+              <div class="upload__form-content">
+                <label class="upload__form-label form-label">
+                  <span>Select Categories</span>
+                  <select class="upload__form-select form-select">
+                    <option class="upload__form-option">Select</option>
+                    <option class="upload__form-option">Category 1</option>
+                    <option class="upload__form-option">Category 2</option>
+                  </select>
+                </label>
+                <label class="upload__form-label form-label">
+                  <span>Product Name</span>
+                  <input class="upload__form-input form-input" type="text"
+                    placeholder="Enter your product name here ..." required>
+                </label>
+                <label class="upload__form-label form-label">
+                  <span>Product Description</span>
+                  <textarea class="upload__form-textarea form-textarea" placeholder="<h1> Type your text  here </h1/>"
+                    required></textarea>
+                </label>
+                <label class="upload__form-label form-label">
+                  <span>Upload Main File</span>
+                  <input class="upload__form-input form-input" type="file" required data-placeholder="No File Choosen" data-browse="Choose File">
+                </label>
+                <label class="upload__form-label form-label">
+                  <span>Upload Screenshots</span>
+                  <input class="upload__form-input form-input" type="file" required data-placeholder="No File Choosen" data-browse="Choose File">
+                </label>
+                <label class="upload__form-label form-label">
+                  <span>File Included</span>
+                  <select class="upload__form-select form-select">
+                    <option class="upload__form-option">Select File Type </option>
+                    <option class="upload__form-option">PDF</option>
+                    <option class="upload__form-option">PNG</option>
+                  </select>
+                </label>
+                <label class="upload__form-label form-label">
+                  <span>File Dimensions</span>
+                  <input class="upload__form-input form-input" type="text"
+                    placeholder="Enter the item  dimentionss here ..." required>
+                </label>
+                <label class="upload__form-label form-label">
+                  <span>Item Tags</span>
+                  <input class="upload__form-input form-input" type="text" placeholder="Enter Tag Here" required>
+                </label>
               </div>
             </div>
-            <div class="settings__tab-item tabs__item" id="tab-2">
-              <div class="settings__tab-inner block__inner">
-                <div class="settings__header block__header">
-                  Profile
-                </div>
-                <div class="settings__content">
-                  some content 2
-                </div>
+            <div class="upload__form-section">
+              <div class="upload__form-header block__header">
+                Set Your Price (US$)
+              </div>
+              <div class="upload__form-content">
+                <label class="upload__form-label form-label">
+                  <span>Regular License</span>
+                  <input class="upload__form-input form-input" type="text" placeholder="$00.00" required>
+                </label>
+                <label class="upload__form-label form-label">
+                  <span>Extended License</span>
+                  <input class="upload__form-input form-input" type="text" placeholder="$00.00" required>
+                </label>
               </div>
             </div>
-            <div class="settings__tab-item tabs__item" id="tab-3">
-              <div class="settings__tab-inner block__inner">
-                <div class="settings__header block__header">
-                  Badges
-                </div>
-                <div class="settings__content">
-                  some content 3
-                </div>
-              </div>
-            </div>
-            <div class="settings__tab-item tabs__item" id="tab-4">
-              <div class="settings__tab-inner block__inner">
-                <div class="settings__header block__header">
-                  E-mail Settings
-                </div>
-                <div class="settings__content">
-                  some content 4
-                </div>
-              </div>
-            </div>
-            <div class="settings__tab-item tabs__item" id="tab-5">
-              <div class="settings__tab-inner block__inner">
-                <div class="settings__header block__header">
-                  Social Network
-                </div>
-                <div class="settings__content">
-                  some content 5
-                </div>
-              </div>
-            </div>
-          </div>
+            <button class="upload__form-btn form-btn" type="submit">Submit</button>
+          </form>
         </div>
       </div>
     </div>
+
+
   </main>
   <footer class="footer">
     <div class="footer__top">

@@ -24,7 +24,8 @@ function pluginscripts(){
     'node_modules/mixitup/dist/mixitup.js',
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/rateyo/jquery.rateyo.js',
-    'node_modules/@fancyapps/fancybox//dist/jquery.fancybox.js'
+    'node_modules/@fancyapps/fancybox//dist/jquery.fancybox.js',
+    'node_modules/jquery-form-styler/dist/jquery.formstyler.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -36,7 +37,9 @@ function pluginstyles(){
     'node_modules/normalize.css/normalize.css',
     'node_modules/slick-carousel/slick/slick.css',
     'node_modules/rateyo/jquery.rateyo.css',
-    'node_modules/@fancyapps/fancybox//dist/jquery.fancybox.css'
+    'node_modules/@fancyapps/fancybox//dist/jquery.fancybox.css',
+    'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+    'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css'
   ])
   .pipe(concat('libs.min.css'))
   .pipe(csso())
