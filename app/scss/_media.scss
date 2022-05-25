@@ -183,6 +183,9 @@
   .error__text{
     font-size: 15px;
   }
+  .about__content{
+    padding: 30px 15px;
+  }
 }
 
 @media (max-width: 420px){
@@ -202,6 +205,9 @@
       font-size: 20px;
       position: absolute;
     }
+  }
+  .about__header{
+    padding: 23px 15px;
   }
 }
 
