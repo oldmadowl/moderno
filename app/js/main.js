@@ -69,6 +69,7 @@ $(function(){
     $('.items__goods').removeClass('line');
   });
 
+
   var mixer = mixitup('.products__box, .items__inner');
 
 });

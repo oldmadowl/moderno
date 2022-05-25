@@ -539,6 +539,8 @@
 //start breadcrumbs
 .breadcrumbs{
   padding: 45px 0 40px;
+  width: 1200px;
+  overflow: hidden;
   &__item{
     position: relative;
     span{
@@ -1959,6 +1961,9 @@
   .item__star-rate .rate-star{
     margin-right: 0;
   }
+  .item__info{
+    transition: all .3s;
+  }
 }
 .item__messages,
 .item__likes{
@@ -2123,9 +2128,6 @@
     .item__likes,
     .item__info-about{
       display: block;
-    }
-    .item__info-about{
-      
     }
     .item__info-row,
     .item__info-about{

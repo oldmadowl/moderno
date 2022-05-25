@@ -1,4 +1,4 @@
-@media (max-width: 1200px){
+@media (max-width: 1220px){
   .withdrawals__inner{
     flex-direction: column;
     margin: 0;
@@ -61,6 +61,77 @@
   .product__content{
     max-width: 100%;
     margin-right: 0;
+  }
+  .items__inner{
+    flex-direction: column;
+  }
+  .items{
+    .items__aside{
+      margin-right: 0;
+      max-width: 100%;
+    }
+    .items__categories-line{
+      justify-content: flex-start;
+    }
+    .items__categories-link{
+      min-width: 150px;
+      margin-right: 30px;
+    }
+    .items__form-btn{
+      max-width: 300px;
+      margin: 50px auto 0;
+    }
+  }
+  .items__sellers{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    .item__inner+.item__inner{
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+    .item__inner{
+      width: calc(33.333% - 30px);
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+    .item__inner > a{
+      display: block;
+    }
+    .item__img{
+      height: 180px;
+    }
+    .items__sellers-btn{
+      margin: 10px auto 0;
+      transform: translateX(30px);
+      max-width: 300px;
+    }
+  }
+  .items__goods{
+    grid-template-columns: repeat(3, 1fr);
+    .item__inner > a{
+      display: block;
+    }
+  }
+  .items{
+    .aside__item{
+      margin-top: 30px;
+    }
+  }
+  .items__aside{
+    display: flex;
+    flex-direction: column;
+  }
+  .items .items__sellers-aside{
+    order: -1;
+    margin-top: 0;
+  }
+  .items__content-header{
+    margin-top: 30px;
+  }
+  .items__page-buttons{
+    margin-top: 50px;
   }
 }
 
@@ -184,6 +255,19 @@
   .profile__items{
     margin-bottom: 0;
   }
+  .items__sellers{
+    .item__inner{
+      width: calc(50% - 30px);
+    }
+    .items__sellers-btn{
+      max-width: 100%;
+      transform: none;
+      margin-left: 30px;
+    }
+  }
+  .items__goods{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 800px){
@@ -214,6 +298,9 @@
   }
   .product__buttons{
     margin-bottom: 20px;
+  }
+  .items__view-buttons{
+    display: none;
   }
 }
 
@@ -379,6 +466,17 @@
     column-count: 1;
     li{
       max-width: 100%;
+    }
+  }
+  .items__sellers{
+    .item__inner{
+      width: 100%;
+    }
+  }
+  .items__goods{
+    grid-template-columns: 1fr;
+    .item__img{
+      height: 240px;
     }
   }
 }
