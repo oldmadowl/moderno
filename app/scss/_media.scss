@@ -28,11 +28,13 @@
     margin-bottom: 30px;
   }
 }
+
 @media (max-width: 1000px){
   .header__text {
     display: none;
   }
 }
+
 @media (max-width: 920px){
   .menu__list {
     display: none;
@@ -69,6 +71,12 @@
   }
   .header__logo{
     margin-left: 55px;
+  }
+  .error__number span{
+    padding-right: 0;
+    &::after{
+      display: none;
+    }
   }
 }
 
@@ -131,6 +139,13 @@
     right: auto;
     left: 0;
   }
+  .error__content{
+    padding: 30px 15px 60px;
+  }
+  .error__number span{
+    font-size: 200px;
+    line-height: 200px;
+  }
 }
 
 @media (max-width: 580px){
@@ -157,6 +172,16 @@
     .social{
       justify-content: space-between;
     }
+  }
+  .error__number span{
+    font-size: 120px;
+    line-height: 120px;
+  }
+  .error__title{
+    font-size: 18px;
+  }
+  .error__text{
+    font-size: 15px;
   }
 }
 
