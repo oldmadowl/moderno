@@ -90,6 +90,14 @@
       display: none;
     }
   }
+  .contact__row{
+    flex-direction: column;
+  }
+  .contact__info{
+    margin-right: 0;
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 800px){
@@ -197,6 +205,19 @@
     margin-right: auto;
     display: block;
   }
+  .contact__input-row{
+    display: block;
+  }
+  .contact__form-input+.contact__form-input{
+    margin-left: 0;
+    margin-top: 28px;
+  }
+  .contact__form-input{
+    width: 100%;
+  }
+  .contact__map iframe{
+    height: 300px;
+  }
 }
 
 @media (max-width: 500px){
@@ -227,7 +248,14 @@
   .settings__content{
     padding: 33px 15px 50px;
   }
-  .settings__header {
+  .settings__header{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .contact__content{
+    padding: 32px 15px 15px;
+  }
+  .contact__header{
     padding-left: 15px;
     padding-right: 15px;
   }
