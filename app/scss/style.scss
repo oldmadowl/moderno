@@ -802,6 +802,9 @@
   &__inner{
     display: flex;
   }
+  .jq-selectbox li{
+    display: block;
+  }
   &__content{
     max-width: 870px;
     margin-right: 30px;
