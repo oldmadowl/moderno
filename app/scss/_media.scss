@@ -33,6 +33,18 @@
   .header__text {
     display: none;
   }
+  .settings__form-label{
+    flex-wrap: wrap;
+    span{
+      flex-basis: 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+  .settings__form-btn{
+    display: block;
+    margin: 25px auto 0;
+  }
 }
 
 @media (max-width: 920px){
@@ -152,6 +164,13 @@
   .upload__form-btn{
     margin-left: 191px;
   }
+  .settings__wrapper{
+    display: block;
+  }
+  .settings__tab-controls{
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 580px){
@@ -165,7 +184,7 @@
   .withdrawals__form {
     padding: 25px 15px 50px;
   }
-  .form-label{
+  .upload__form-label{
     flex-wrap: wrap;
   }
   .upload__form-label span{
@@ -204,6 +223,13 @@
   }
   .about__content{
     padding: 30px 15px;
+  }
+  .settings__content{
+    padding: 33px 15px 50px;
+  }
+  .settings__header {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
