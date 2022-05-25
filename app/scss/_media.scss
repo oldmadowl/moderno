@@ -146,6 +146,12 @@
     font-size: 200px;
     line-height: 200px;
   }
+  .upload__form-content{
+    padding: 43px 15px 0;
+  }
+  .upload__form-btn{
+    margin-left: 191px;
+  }
 }
 
 @media (max-width: 580px){
@@ -158,6 +164,19 @@
   }
   .withdrawals__form {
     padding: 25px 15px 50px;
+  }
+  .form-label{
+    flex-wrap: wrap;
+  }
+  .upload__form-label span{
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .upload__form-btn{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }
 
@@ -207,6 +226,9 @@
     }
   }
   .about__header{
+    padding: 23px 15px;
+  }
+  .upload__form-header{
     padding: 23px 15px;
   }
 }
