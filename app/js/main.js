@@ -40,6 +40,35 @@ $(function(){
 
   $('input[type="file"], select').styler();
 
-  var mixer = mixitup('.products__box');
+  $('.items__range-slider').ionRangeSlider({
+    type: 'double',
+    skin: 'round',
+    min: 0,
+    max: 1000,
+    from: 0,
+    to: 600,
+  });
+
+  $('.items__page-btn').on('click', function(){
+    $('.items__page-btn').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('.items__view-btn').on('click', function(){
+    $('.items__view-btn').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('.items__view-btn--line').on('click', function(){
+    $('.items .item').addClass('line');
+    $('.items__goods').addClass('line');
+  });
+
+  $('.items__view-btn--grid').on('click', function(){
+    $('.items .item').removeClass('line');
+    $('.items__goods').removeClass('line');
+  });
+
+  var mixer = mixitup('.products__box, .items__inner');
 
 });
